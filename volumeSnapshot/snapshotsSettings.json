@@ -1,0 +1,14 @@
+{
+  "volumes": 
+  [
+    {
+      "vol_name" : "your_DigitalOcean_volume_name",
+      "total_snapshots": 3,
+      "services" : ["chronograf"]      
+    }   
+  ],
+  "common_services" : ["nginx","chronograf"], 
+  "secret_key" : "Your DigitalOcean Secret Key",
+  "region" : "blr1",
+  "emails": ["email1@gmail.com","email2@gmail.com"]
+}
