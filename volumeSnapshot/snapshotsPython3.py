@@ -5,6 +5,7 @@
 #apt install libcurl4-gnutls-dev librtmp-dev
 #apt install python3-pip
 #pip3 install pycurl
+# Author: Pranab Sharma (pranabksharma@gmail.com)
 #**********************************************************************
 
 
