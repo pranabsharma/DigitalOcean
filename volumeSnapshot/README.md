@@ -11,8 +11,11 @@ Script functionalities:
 How to run this script:
 1) In python 2.7 : python snapshots.py 
 2) In python 3+ : python3 snapshotsPython3.py
+
 You can pass command line argument 
+
 i) --startServices : Starts the dependent services after snapshot is taken
+
 ii) --dontStopServices : By default script stops dependent services, this option keeps the services running while snapshot being taken for a volume
 
 Config file:
@@ -21,23 +24,29 @@ settings_file = os.path.dirname(os.path.realpath(__file__)) + '/snapshotsSetting
 
 Example config file:
 
-{
-	"volumes":
-	[{
-			"vol_name": "db_volume",
-			"total_snapshots": 4,
-			"services": ["mysql"]
-		}, {
-			"vol_name": "app_volume",
-			"total_snapshots": 2,
-			"services": ["nginx", "tomcat"]
-		}
-	],
-	"common_services": ["haproxy"],
-	"secret_key": "YOUR DIGITALOCEAN KEY",
-	"region": "blr1",
-	"emails": ["xyz@example.com", "abc@example.com"]
-}
+	
+	{
+		"volumes":
+		[
+			{
+	
+				"vol_name": "db_volume",			
+				"total_snapshots": 4,			
+				"services": ["mysql"]
+			
+			}, 
+			{
+		
+				"vol_name": "app_volume",
+				"total_snapshots": 2,
+				"services": ["nginx", "tomcat"]
+			}
+		],
+		"common_services": ["haproxy"],
+		"secret_key": "YOUR DIGITALOCEAN KEY",
+		"region": "blr1",
+		"emails": ["xyz@example.com", "abc@example.com"]
+	}
 
 
 
