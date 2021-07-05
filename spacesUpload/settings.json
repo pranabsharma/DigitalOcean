@@ -1,0 +1,9 @@
+{
+  "access_id" : "YOUR ACCESS ID",
+  "secret_key" : "YOUR DIGITALOCEAN KEY",
+  "region_name" : "sgp1",
+  "endpoint_url" : "https://sgp1.digitaloceanspaces.com",
+  "upload_path": "backups",  
+  "spaces_name": "YOUR SPACES NAME",
+  "emails": ["xyz@example.com","abc@example.com"]
+}
