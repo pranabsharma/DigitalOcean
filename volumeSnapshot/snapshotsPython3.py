@@ -77,7 +77,7 @@ def stop_service(service_name):
 #***********************Email Sending Function**********************************
 def send_email(recipients,message,subject):
     msg = MIMEMultipart()
-    msg['From'] = 'emaalerts@mkcl.org'
+    msg['From'] = 'yourEmailID@gmail.com'
     msg['To'] = recipients
     msg['Subject'] = subject
     msg.attach(MIMEText(message, 'html'))
@@ -86,7 +86,7 @@ def send_email(recipients,message,subject):
         mailserver = smtplib.SMTP('smtp.gmail.com', 587)
         mailserver.starttls()
         mailserver.ehlo()
-        mailserver.login('emaalerts@mkcl.org', 'eM@email!7')
+        mailserver.login('yourEmailID@gmail.com', 'yourPassword')
 
         try:
             mailserver.sendmail(msg['From'],recipients.split(','),msg.as_string())
